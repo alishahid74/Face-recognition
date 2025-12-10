@@ -1,0 +1,37 @@
+# Custom Model Configuration
+name: Shahid
+type: classification  # or detection, segmentation, etc.
+framework: pytorch  # pytorch, tensorflow, onnx, etc.
+
+# Model file path
+model_path: models/weights/shahid.pth
+
+# Input configuration
+input_size: [224, 224]
+input_channels: 3
+
+# Classes (for classification/detection)
+classes:
+  - class1
+  - class2
+  - class3
+
+# Preprocessing configuration
+preprocessing:
+  normalize: true
+  mean: [0.485, 0.456, 0.406]
+  std: [0.229, 0.224, 0.225]
+  resize_mode: center_crop
+
+# Inference configuration
+inference:
+  batch_size: 1
+  device: auto  # auto, cpu, cuda
+  confidence_threshold: 0.5
+
+# Metadata
+metadata:
+  author: Your Name
+  description: Custom model for specific task
+  version: 1.0.0
+  date: 2025-01-01
