@@ -1,8 +1,8 @@
-# 🚀 AI Vision Framework
+# AI Vision Framework
 
 A comprehensive deep learning framework with GUI for running pre-trained models on various computer vision tasks.
 
-## ✨ Features
+## Features
 
 ### Supported Tasks
 - **Image Classification** - Classify images into 1000 ImageNet categories
@@ -40,7 +40,7 @@ A comprehensive deep learning framework with GUI for running pre-trained models 
 - **Ultralytics** - For YOLOv8 models
 - **ONNX** - Cross-platform model format support
 
-## 📦 Installation
+## Installation
 
 ### Prerequisites
 - Python 3.8 or higher
@@ -61,7 +61,7 @@ pip install -r requirements.txt --break-system-packages
 pip install mediapipe --break-system-packages
 ```
 
-## 🎯 Quick Start
+## Quick Start
 
 ### Launch GUI Application
 
@@ -81,7 +81,7 @@ python gui/main_app.py
 - **Ctrl+O**: Open image
 - **Q**: Quit webcam/video mode
 
-## 💻 Programmatic Usage
+## Programmatic Usage
 
 ### Image Classification Example
 
@@ -178,7 +178,7 @@ for frame_results in recognizer.detect_hands_video(0):  # 0 = webcam
     # Press 'q' to quit
 ```
 
-## 🔧 Configuration
+##  Configuration
 
 Edit `config/config.py` to customize:
 - Model paths and cache directories
@@ -186,7 +186,7 @@ Edit `config/config.py` to customize:
 - Supported file formats
 - Class labels
 
-## 📊 Model Performance
+## Model Performance
 
 ### Image Classification (ImageNet)
 - ResNet50: Top-1: 76.2% | Top-5: 92.9%
@@ -199,7 +199,7 @@ Edit `config/config.py` to customize:
 - YOLOv8m: mAP: 50.2 | Speed: ~40 FPS
 - YOLOv8l: mAP: 52.9 | Speed: ~30 FPS
 
-## 🎨 GUI Features
+##  GUI Features
 
 - **Modern Dark Theme**: Easy on the eyes
 - **Real-time Preview**: See results as they happen
@@ -208,7 +208,7 @@ Edit `config/config.py` to customize:
 - **Adjustable Settings**: Confidence thresholds, IOU, etc.
 - **Export Results**: Save annotated images
 
-## 🛠️ Advanced Features
+##  Advanced Features
 
 ### Custom Model Integration
 Add your own models by extending the factory classes:
@@ -252,7 +252,7 @@ class CustomPreprocessor(ImagePreprocessor):
         return transformed_image
 ```
 
-## 📝 System Requirements
+##  System Requirements
 
 ### Minimum Requirements
 - CPU: Intel i5 or equivalent
@@ -266,7 +266,7 @@ class CustomPreprocessor(ImagePreprocessor):
 - RAM: 16 GB
 - Storage: 10 GB SSD
 
-## 🐛 Troubleshooting
+##  Troubleshooting
 
 ### Common Issues
 
@@ -289,24 +289,24 @@ model = DetectionModelFactory.create_model('YOLOv8n')  # Use nano instead of lar
 sudo usermod -a -G video $USER
 ```
 
-## 📚 Documentation
+##  Documentation
 
 - Model Cards: See `docs/models/` for detailed model information
 - API Reference: See `docs/api/` for API documentation
 - Tutorials: See `docs/tutorials/` for step-by-step guides
 
-## 🤝 Contributing
+## Contributing
 
 Contributions are welcome! Please:
 1. Fork the repository
 2. Create a feature branch
 3. Submit a pull request
 
-## 📄 License
+##  License
 
 This project is licensed under the MIT License.
 
-## 🙏 Acknowledgments
+##  Acknowledgments
 
 - **PyTorch** - Deep learning framework
 - **TensorFlow** - Machine learning platform
@@ -314,14 +314,14 @@ This project is licensed under the MIT License.
 - **MediaPipe** - Cross-platform ML solutions
 - **OpenCV** - Computer vision library
 
-## 📧 Support
+##  Support
 
 For issues and questions:
 - GitHub Issues: Report bugs and request features
 - Documentation: Check the docs/ folder
 - Community: Join discussions
 
-## 🔄 Updates
+## Updates
 
 ### Version 1.0.0 (Current)
 - Initial release
